@@ -265,7 +265,7 @@ else:
         col1, col2 = st.columns([1, 3])
         with col1:
             st.markdown("<div style='padding-top: 70px;'>", unsafe_allow_html=True)
-            st.image(row["Image URL"], width=200, use_column_width=False)
+            st.image(row["Image URL"], width=200, use_container_width=False)
             st.markdown("</div>", unsafe_allow_html=True)
             if st.button(f"View Full Image", key=f"img_{idx}"):
                 st.session_state.selected_image = row["Image URL"]
